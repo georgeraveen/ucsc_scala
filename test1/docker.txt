@@ -1,0 +1,19 @@
+# Build a Docker image
+docker build -t scala .
+
+# Run Docker image call scala and name it as scala
+docker run --name scala -it scala
+docker run -v ~/:/home --name scala -it scala
+
+#login to running docker container
+docker exec -it scala bash
+
+# Start the gcc Docker image
+docker start -ai scala
+
+#remove all dockers
+docker rm -f $(docker ps -a -q)
+
+#remove all docker images
+docker rmi -f $(docker images -a -q)
+
