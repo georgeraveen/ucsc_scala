@@ -16,6 +16,7 @@ object ticket extends App{
       x=x+5;
     }
     println("best price is ",a);
+    println("best ticket price is ",x);
 
   }
   best();
